@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addEducation } from '../../actions/profile';
@@ -118,9 +119,9 @@ const AddEducation = ({ addEducation, history }) => {
             onChange={(e) => handleChange(e)}></textarea>
         </div>
         <input type='submit' className='btn btn-primary my-1' />
-        <a href='dashboard.html' className='btn my-1'>
+        <Link to='/dashboard' className='btn my-1'>
           Go Back
-        </a>
+        </Link>
       </form>
     </Fragment>
   );
